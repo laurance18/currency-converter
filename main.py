@@ -1,3 +1,7 @@
+from forex_python.converter import CurrencyRates, RatesNotAvailableError
+from tkinter import messagebox
+from tkinter import *
+
 def convert():
     rates = CurrencyRates()
     currentinp = ""
@@ -13,7 +17,12 @@ def convert():
     else:
         currentout = OutputCurrencyChoice.get()
 
-    OutputVar.set(round((rates.get_rate(currentinp,currentout))*int(TextVar.get()),2))
+    try:
+        OutputVar.set(round((rates.get_rate(currentinp,currentout))*int(TextVar.get()),2))
+    except RatesNotAvailableError:
+        messagebox.showinfo("Error", "Please provide a correct ISO code.")
+    except ValueError:
+        messagebox.showinfo("Error", "Please type in a number.")
 
 def main():
     
@@ -67,6 +76,4 @@ def main():
     Screen.mainloop()
 
 if __name__ == "__main__":
-    from forex_python.converter import CurrencyRates
-    from tkinter import *
     main()
