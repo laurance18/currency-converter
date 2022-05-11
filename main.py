@@ -29,6 +29,7 @@ def main():
     #Setting up the screen
     Screen = Tk()
     Screen.title("Currency Converter")
+    Screen.geometry("550x100")
 
     currency_opts = ["USD","EUR","GBP","JPY","CHF","TRY","Other (Type the ISO Code)"]
 
