@@ -1,10 +1,10 @@
 # Currency Converter
 
-## What is Currency Converter
+## What is Currency Converter?
 
 Currency Converter is a python script made for the use of converting currencies according to forex exchange rates. It has the same simple-design GUI as the Language Translator project I made.
 
-~~Only a handful of choices available as currencies since I used a dropdown menu, but I will implement a feature where user can type in the ISO code of the desired currencies themselves.~~
+~~Only a handful of choices available as currencies since I used a dropdown menu, but I will implement a feature where user can type in the ISO code of the desired currencies themselves.~~ 
 Manual ISO Code input system has been implemented. Error handling and message boxes unique to the error has been added.
 
 ## Requirements
@@ -20,4 +20,4 @@ Manual ISO Code input system has been implemented. Error handling and message bo
 
 # Troubleshooting
 
-Currently there is no way for users to troubleshoot. Best thing you can do is tell me how I can recreate the bug so I can try to fix it!
+Currently there is no way for users to troubleshoot. Best thing you can do is open an issue and describe how I can re-create the bug!
