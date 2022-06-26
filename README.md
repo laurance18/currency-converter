@@ -18,6 +18,6 @@ Manual ISO Code input system has been implemented. Error handling and message bo
 - Start up your command prompt and change directory to the file's location.
 - Type `python main.py` in the command prompt and press Enter.
 
-# Troubleshooting
+## Troubleshooting
 
 Currently there is no way for users to troubleshoot. Best thing you can do is open an issue and describe how I can re-create the bug!
